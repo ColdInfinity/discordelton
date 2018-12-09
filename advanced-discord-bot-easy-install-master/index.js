@@ -96,10 +96,10 @@ bot.elevation = function (msg) {
      is then sent to the command handler for verification*/
   let permlvl = 0;
 
-  let mod_role = msg.guild.roles.find("name", "Members");
-  if (mod_role && msg.member.roles.has(mod_role.id)) permlvl = 2;
+  let mod_role = msg.guild.roles.find("name", "Administrator");
+  if (mod_role && msg.member.roles.has(mod_role.id)) permlvl = 4;
 
-  let admin_role = msg.guild.roles.find("name", "Higher-up Members");
+  let admin_role = msg.guild.roles.find("name", "DeltonModeration");
   if (admin_role && msg.member.roles.has(admin_role.id)) permlvl = 3;
 
   if (msg.author.id === "103509994074312704") permlvl = 4;
