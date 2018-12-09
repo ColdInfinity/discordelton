@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot",
+  "name": "DeltonModeration",
   "version": "1.0.0",
   "description": "easy to use discord bot",
   "main": "index.js",
